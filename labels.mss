@@ -452,23 +452,4 @@
   text-size:11;
 }
 
-/* ================================================================== */
-/* ONE-WAY ARROWS
-/* ================================================================== */
-
-#motorway_label,
-#mainroad_label,
-#minorroad_label {
-  [oneway!=''][oneway!='no'][zoom>=16] {
-    marker-placement:line;
-    marker-max-error: 0.5;
-    marker-spacing: 200;
-    marker-file: url(img/icon/oneway.svg);
-    [oneway=-1] { marker-file: url(img/icon/oneway-reverse.svg); }
-    [zoom=16] { marker-transform: "scale(0.5)"; }
-    [zoom=17] { marker-transform: "scale(0.75)"; }
-  }
-}
-
-
 /* ****************************************************************** */
